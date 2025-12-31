@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>متجري - المنتجات</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-shopping-bag"></i> متجري
+        </a>
+        <div class="nav-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="products.html" class="active">المنتجات</a>
+          <a href="contactus.html">اتصل بنا</a>
+        </div>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </div>
+      <div class="mobile-nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html" class="active">المنتجات</a>
+        <a href="contactus.html">اتصل</a>
+      </div>
+    </nav>
+
+    <main class="section">
+      <div class="container">
+        <h2 class="section-title" style="text-align: right; border-bottom: 1px solid #e5e7eb; padding-bottom: 1rem;">كل المنتجات</h2>
+
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="ابحث عن منتج..."
+            class="search-input"
+          />
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+
+        <div class="filter-container">
+          <button
+            onclick="filterProducts('all')"
+            class="filter-btn active-filter"
+            data-cat="all"
+          >
+            الكل
+          </button>
+          <button
+            onclick="filterProducts('electronics')"
+            class="filter-btn"
+            data-cat="electronics"
+          >
+            إلكترونيات
+          </button>
+          <button
+            onclick="filterProducts('fashion')"
+            class="filter-btn"
+            data-cat="fashion"
+          >
+            أزياء
+          </button>
+          <button
+            onclick="filterProducts('watches')"
+            class="filter-btn"
+            data-cat="watches"
+          >
+            ساعات
+          </button>
+          <button
+            onclick="filterProducts('shoes')"
+            class="filter-btn"
+            data-cat="shoes"
+          >
+            أحذية
+          </button>
+        </div>
+
+        <div id="products-grid" class="products-grid"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>متجري</h4>
+            <p>
+              وجهتك الأولى للتسوق الإلكتروني في الشرق الأوسط. جودة عالية وأسعار
+              منافسة.
+            </p>
+          </div>
+          <div>
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="products.html">المنتجات</a></li>
+              <li><a href="cart.html">سلة المشتريات</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>تواصل معنا</h4>
+            <div class="social-links">
+              <a href="#" class="fb"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="in"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; 2024 متجري. جميع الحقوق محفوظة.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

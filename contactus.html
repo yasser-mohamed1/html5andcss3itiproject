@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>متجري - اتصل بنا</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-shopping-bag"></i> متجري
+        </a>
+        <div class="nav-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="products.html">المنتجات</a>
+          <a href="contactus.html" class="active">اتصل بنا</a>
+        </div>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </div>
+      <div class="mobile-nav">
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="contactus.html" class="active">اتصل</a>
+      </div>
+    </nav>
+
+    <main class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-card">
+            <h2 class="section-title" style="color: var(--primary-color)">
+              تواصل معنا
+            </h2>
+            <form
+              onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح!'); window.location.href='index.html';"
+            >
+              <div class="form-group">
+                <label class="form-label">الاسم الكامل</label>
+                <input type="text" required class="form-input" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">البريد الإلكتروني</label>
+                <input type="email" required class="form-input" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">الرسالة</label>
+                <textarea rows="4" required class="form-input"></textarea>
+              </div>
+              <button type="submit" class="form-btn">إرسال</button>
+            </form>
+          </div>
+
+          <div>
+            <h3
+              class="section-title"
+              style="
+                font-size: 1.5rem;
+                text-align: right;
+                border-bottom: 2px solid #e5e7eb;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1.5rem;
+              "
+            >
+              الأسئلة الشائعة
+            </h3>
+            <div>
+              <details class="faq-item">
+                <summary>
+                  ما هي مدة التوصيل؟
+                  <i class="fas fa-chevron-down"></i>
+                </summary>
+                <p>
+                  يستغرق التوصيل عادةً من 2 إلى 4 أيام عمل داخل المدن الرئيسية،
+                  ومن 3 إلى 7 أيام في المناطق النائية.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>
+                  هل يمكنني ارجاع المنتج؟
+                  <i class="fas fa-chevron-down"></i>
+                </summary>
+                <p>
+                  نعم، يمكنك إرجاع المنتج خلال 14 يوم من تاريخ الاستلام بشرط أن
+                  يكون في حالته الأصلية وغير مستخدم.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>
+                  ما هي طرق الدفع المتاحة؟
+                  <i class="fas fa-chevron-down"></i>
+                </summary>
+                <p>
+                  نقبل الدفع عند الاستلام، البطاقات الائتمانية (فيزا/ماستركارد)،
+                  والمحافظ الإلكترونية.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>
+                  هل المنتجات أصلية؟
+                  <i class="fas fa-chevron-down"></i>
+                </summary>
+                <p>
+                  جميع منتجاتنا أصلية 100% ونضمن جودتها، ولدينا ضمان وكيل على
+                  الأجهزة الإلكترونية.
+                </p>
+              </details>
+            </div>
+
+            <div class="contact-info">
+              <h3
+                style="
+                  font-weight: 700;
+                  font-size: 1.125rem;
+                  margin-bottom: 1rem;
+                  color: #1e40af;
+                "
+              >
+                معلومات الاتصال المباشر
+              </h3>
+              <ul>
+                <li>
+                  <i class="fas fa-phone"></i>
+                  <span>+20 123 456 789</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <span>support@mystore.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>القاهرة، مصر - شارع التسعين، التجمع الخامس</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>متجري</h4>
+            <p>
+              وجهتك الأولى للتسوق الإلكتروني في الشرق الأوسط. جودة عالية وأسعار
+              منافسة.
+            </p>
+          </div>
+          <div>
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="products.html">المنتجات</a></li>
+              <li><a href="cart.html">سلة المشتريات</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>تواصل معنا</h4>
+            <div class="social-links">
+              <a href="#" class="fb"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="in"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">&copy; 2024 متجري. جميع الحقوق محفوظة.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>متجري - الرئيسية</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-shopping-bag"></i> متجري
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="active">الرئيسية</a>
+          <a href="products.html">المنتجات</a>
+          <a href="contactus.html">اتصل بنا</a>
+        </div>
+        <a href="cart.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </a>
+      </div>
+      <div class="mobile-nav">
+        <a href="index.html" class="active">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="contactus.html">اتصل</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>أهلاً بك في عالم التسوق</h1>
+          <p>أفضل المنتجات العصرية بين يديك الآن بأسعار منافسة</p>
+          <a href="products.html" class="btn btn-white">تسوق الآن</a>
+        </div>
+        <div class="hero-overlay"></div>
+      </section>
+
+      <section class="section bg-white">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-shipping-fast"></i>
+              <h3>شحن سريع</h3>
+              <p>توصيل لجميع المحافظات خلال 48 ساعة</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-headset"></i>
+              <h3>دعم فني</h3>
+              <p>فريقنا جاهز لخدمتكم على مدار الساعة</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-undo"></i>
+              <h3>استرجاع مجاني</h3>
+              <p>ضمان استعادة الاموال خلال 14 يوم</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">تسوق حسب القسم</h2>
+          <div class="categories-grid">
+            <a href="products.html?cat=electronics" class="category-card">
+              <img src="images/elctronics.jpg" alt="إلكترونيات" />
+              <div class="category-overlay">
+                <span>إلكترونيات</span>
+              </div>
+            </a>
+            <a href="products.html?cat=fashion" class="category-card">
+              <img src="images/clothes.jpg" alt="أزياء" />
+              <div class="category-overlay">
+                <span>أزياء</span>
+              </div>
+            </a>
+            <a href="products.html?cat=watches" class="category-card">
+              <img src="images/watches.jpg" alt="ساعات" />
+              <div class="category-overlay">
+                <span>ساعات</span>
+              </div>
+            </a>
+            <a href="products.html?cat=shoes" class="category-card">
+              <img src="images/shoes.jpg" alt="أحذية" />
+              <div class="category-overlay">
+                <span>أحذية</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-white">
+        <div class="container">
+          <h2 class="section-title">الأكثر مبيعاً</h2>
+          <div id="featured-products" class="products-grid"></div>
+        </div>
+      </section>
+
+      <section class="promo-section">
+        <div class="container promo-container">
+          <div class="promo-content">
+            <span class="promo-tag">عرض محدود</span>
+            <h2 class="promo-title">خصم 50% على الأحذية الرياضية</h2>
+            <p class="promo-desc">
+              احصل على أحدث تشكيلة من الأحذية الرياضية بأسعار لا تقبل المنافسة
+              لفترة محدودة فقط.
+            </p>
+            <a href="products.html?cat=shoes" class="btn btn-white">تسوق العرض</a>
+          </div>
+          <div class="promo-img">
+            <img src="images/shoes.jpg" alt="حذاء رياضي" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">ماذا يقول عملاؤنا</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/person.jpg" alt="عميل" />
+                <div>
+                  <h4>أحمد محمد</h4>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p>
+                "تجربة تسوق ممتازة، المنتجات وصلت في الموعد المحدد وبجودة عالية
+                جداً. أنصح بالتعامل معهم."
+              </p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/person.jpg" alt="عميل" />
+                <div>
+                  <h4>محمد علي</h4>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+              <p>
+                "أفضل موقع لشراء الإلكترونيات، الأسعار منافسة جداً والدعم الفني
+                متعاون لأبعد الحدود."
+              </p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/person.jpg" alt="عميل" />
+                <div>
+                  <h4>خالد عمر</h4>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p>
+                "التغليف ممتاز وسرعة التوصيل أبهرتني. شكراً لكم على هذه
+                الاحترافية."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <h2 class="section-title" style="color: white">انضم لقائمتنا البريدية</h2>
+          <p style="margin-bottom: 1.5rem; opacity: 0.8">
+            احصل على أحدث العروض والخصومات مباشرة إلى بريدك الإلكتروني
+          </p>
+          <div class="newsletter-form">
+            <input
+              type="email"
+              placeholder="أدخل بريدك الإلكتروني"
+              class="newsletter-input"
+            />
+            <button class="newsletter-btn">اشتراك</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>متجري</h4>
+            <p>
+              وجهتك الأولى للتسوق الإلكتروني في الشرق الأوسط. جودة عالية وأسعار
+              منافسة.
+            </p>
+          </div>
+          <div>
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="products.html">المنتجات</a></li>
+              <li><a href="cart.html">سلة المشتريات</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>تواصل معنا</h4>
+            <div class="social-links">
+              <a href="#" class="fb"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="in"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; 2024 متجري. جميع الحقوق محفوظة.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
